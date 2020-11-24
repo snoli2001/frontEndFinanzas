@@ -1,0 +1,23 @@
+
+<app-navbar></app-navbar>
+<div class="container d-flex align-items-center justify-content-center align-items-center">
+  <table class="rwd-table">
+    <tr>
+      <th>Crédito</th>
+      <th>Tasa de Interés</th>
+      <th>Tipo de Tasa</th>
+    </tr>
+    <tr *ngFor="let account of accounts">
+      <td data-th="Credito">{{account.credit_line.credit | number: '.2'}} </td>
+      <td data-th="Tasa" >{{account.credit_line.interest_rate | number: '.2'}}</td>
+      <td data-th="Tasa" >{{account.credit_line.type}}</td>
+      <td data-th="Pagar cuenta">
+        <span  class="btn btn-danger">Pagar Cuenta</span>
+      </td>
+
+    </tr>
+  </table>
+</div>
+<app-footer></app-footer>
+
+

@@ -6,6 +6,9 @@
     left: 0;
     text-align: center;
   }
+  body {
+    overflow: hidden;
+  }
 }
 
 html {
@@ -15,5 +18,12 @@ html {
 
 body {
   margin-bottom: 60px;
-  /* Margin bottom by footer height */
 }
+
+/*.bg-primary {*/
+/*  background-color: #2ee6c5 !important;*/
+/*}*/
+/*.btn-primary {*/
+/*  background-color: #2ee6c5 !important;*/
+/*  border: #2ee6c5;*/
+/*}*/

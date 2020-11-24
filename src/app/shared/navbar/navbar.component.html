@@ -1,39 +1,71 @@
 <header>
 
-  <nav class="navbar navbar-light navbar-expand-md bg-faded justify-content-center bg-primary">
-    <a href="/" class="navbar-brand d-flex  w-20 text-white">
-      <h1>Grant Credits</h1>
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
+  <nav class="navbar navbar-icon-top navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand mr-5" href="#"><h2>Grant Credit</h2></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
 
-      <ul class="nav navbar-nav ml-auto w-100 justify-content-start">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#" routerLink="/home">
+            <i class="fa fa-home"></i>
+            Inicio
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+<!--        <li class="nav-item">-->
+<!--          <a class="nav-link" href="#">-->
+<!--            <i class="fa fa-money">-->
+<!--            </i>-->
+<!--            Caja-->
+<!--          </a>-->
+<!--        </li>-->
         <li class="nav-item">
-          <a class="nav-link text-white mr-4" href="#">Inicio</a>
+          <a class="nav-link" href="#" routerLink="/newClient">
+            <i class="fa fa-user">
+            </i>
+            Nuevo cliente
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#" routerLink="/clients">
+            <i class="fa fa-users">
+            </i>
+            Clientes
+          </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white mr-4" href="#">Flujo de caja</a>
+          <a class="nav-link" href="#" routerLink="/newCredit">
+            <i class="fa fa-credit-card">
+            </i>
+            Nueva línea de crédito
+          </a>
+        </li>
+<!--        <li class="nav-item">-->
+<!--          <a class="nav-link" href="#" routerLink="/credits">-->
+<!--            <i class="fa fa-book">-->
+<!--            </i>-->
+<!--            Líneas de crédito-->
+<!--          </a>-->
+<!--        </li>-->
+        <li class="nav-item">
+          <a class="nav-link" href="#" routerLink="/maintenance">
+            <i class="fa fa-address-card">
+            </i>
+            Nuevo Mantenimiento
+          </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white mr-4" href="#">Usuarios</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white mr-4" href="#">Líneas de credito</a>
+          <a class="nav-link" href="" (click)="logOut()" >
+            <i class="fa fa-sign-out">
+            </i>
+            Salir
+          </a>
         </li>
       </ul>
-      <img class="mr-2" src="assets/img/userImageNavbar.png" height="40px" alt="">
-      <div class="btn-group">
-        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          User name
-        </button>
-        <div class="dropdown-menu dropdown-menu-right">
-          <button class="dropdown-item" type="button">Actualizar datos</button>
-          <button class="dropdown-item" type="button">Alertas</button>
-          <button class="dropdown-item" type="button">Cerrar sesión</button>
-        </div>
-      </div>
     </div>
   </nav>
 

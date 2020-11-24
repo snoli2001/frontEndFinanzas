@@ -1,0 +1,115 @@
+<app-navbar></app-navbar>
+<main class="container-fluid">
+  <div class="row" style="background-color: #F6EEEE;">
+
+    <div class="col-sm-5 ">
+      <section class="container-fluid d-flex justify-content-center align-items-center " style=" height: 85vh; ">
+        <lottie-player src="https://assets8.lottiefiles.com/private_files/lf30_4bVja9.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
+      </section>
+    </div>
+
+    <form (ngSubmit)="newClientSubmit( registerForm )"
+          #registerForm="ngForm"
+      class="col-sm-7 container-fluid d-flex flex-column justify-content-around"
+          style="height: 100%"
+          autocomplete="off">
+
+      <h2 class=" text-center text-primary mr-lg-5 mt-5 "> Nuevo Cliente</h2>
+
+      <div class="form-group row mt-5">
+        <label class="text-lg-center
+                          col-lg-3
+                          col-md-4
+                          col-3
+                          col-form-label
+                          text-justify"
+
+        >
+          Nombre
+        </label>
+
+        <div class="col-lg-2 col-md-3 col-3">
+          <input type="text" class="form-control"
+                 name="firstName"
+                 [(ngModel)]="client.first_name"
+                 required
+                 minlength="2">
+        </div>
+        <label class="  text-lg-center
+                          col-md-2
+                          col-lg-2
+                          col-2
+                          col-form-label
+                          text-center"
+              >
+          Apellido
+        </label>
+        <div class="col-lg-2 col-md-3 col-3">
+          <input type="text" class="form-control"
+                 name="lastName"
+                 required
+                 minlength="2"
+                 [(ngModel)]="client.last_name">
+        </div>
+
+      </div>
+      <div class="form-group row ">
+        <label class="text-lg-center
+                        col-sm-3
+                        col-md-4
+                        col-lg-3
+                        col-form-label
+                        text-justify"
+              >
+          Teléfono
+        </label>
+        <div class="col-sm-9 col-md-8 col-lg-6">
+          <input type="tel" class="form-control"
+                 name="phone"
+                 [(ngModel)]="client.phone"
+                 required
+                 minlength="5">
+        </div>
+      </div>
+
+      <div class="form-group row  ">
+        <label class="text-lg-center
+                        col-sm-3
+                        col-md-4
+                        col-lg-3
+                        col-form-label
+                        text-justify"
+               >
+          DNI
+        </label>
+        <div class="col-sm-9 col-md-8 col-lg-6">
+          <input type="text"
+                 class="form-control"
+                 name="DNI"
+                 [(ngModel)]="client.dni"
+                 required
+                 minlength="5">
+        </div>
+      </div>
+
+      <div class="row ">
+
+        <div class="col-6  p-4 d-flex justify-content-end">
+          <button type="submit" class="btn btn-primary "  type="submit">Agregar</button>
+        </div>
+
+        <div class="col-6  p-4">
+          <button type="submit" class="btn btn-danger " routerLink="/home">Regresar</button>
+        </div>
+
+      </div>
+
+
+
+    </form>
+
+
+  </div>
+
+</main>
+<app-footer></app-footer>
